@@ -9,17 +9,20 @@
 <body>
     <h1>Formulário</h1>
     <form action="formulario.php" method="POST">
-        <div>
-            <label for="nome_usuario">Nome:</label><!--Label insere um rótulo -->
-            <!--Input text é um campo de entrada de texto-->
-            <input type="text" name="nome_usuario" id="nome_usuario"
-            size="50" maxlength="10" minlength="3" placeholder="Digite seu nome">
-        </div>
-        <br>
-        <div>
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" id="senha">
-        </div>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div>
+                <label for="nome_usuario">Nome:</label><!--Label insere um rótulo -->
+                <!--Input text é um campo de entrada de texto-->
+                <input type="text" name="nome_usuario" id="nome_usuario"
+                size="50" maxlength="10" minlength="3" placeholder="Digite seu nome">
+            </div>
+            <br>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+            </div>
+        </fieldset>
         <br>
         <div>
             <label for="">Hobbies</label>
